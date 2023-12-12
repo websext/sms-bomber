@@ -1,0 +1,212 @@
+@import url(/assets/themes/--light-theme.css);
+@import url(/assets/static/css-setup.css);
+@import url(/assets/themes/--dark-theme.css);
+
+#content {
+	height: 400px;
+	width: 555px;
+}
+.layout-wrapper {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow: hidden;
+}
+.content-both {
+	position: relative;
+	flex: 1;
+	max-width: 50%;
+	overflow: hidden;
+}
+.form-content {
+	flex-direction: column;
+	display: flex;
+	background-color: var(--sms-bomber-extension-background);
+}
+.info-content {
+	background-color: var(--sms-bomber-primary-section-background);
+}
+.form-content .headwrap {
+	justify-content: flex-end;
+	align-items: center;
+	padding: 4px 8px;
+	flex-wrap: nowrap;
+	display: flex;
+	column-gap: 8px;
+	padding-top: 8px;
+	flex-direction: row-reverse;
+}
+.form-content .headwrap img {
+	width: 35px;
+	height: 35px;
+}
+.form-content .headwrap h3 {
+	font-size: 17px;
+	font-weight: 600;
+	color: var(--sms-bomber-header-title-color);
+}
+.form-content form {
+	padding: 11px;
+}
+.form-content form .field {
+	width: 100%;
+	margin: 8px 0;
+}
+.form-content form select,
+.form-content form button,
+.form-content form input {
+	padding: 3px 1px 0 0;
+	height: 30px;
+	width: 100%;
+	color: inherit;
+	font-family: inherit;
+	border-bottom: var(--sms-bomber-input-border);
+	background-color: var(--sms-bomber-input-background);
+}
+.form-content form select:focus,
+.form-content form input:focus {
+	border-color: #6363cf;
+}
+.form-content form input:focus::placeholder {
+	color: #cac8c8;
+}
+.form-content form button {
+	font-family: inherit;
+	color: #fff;
+	margin-top: 18px;
+	padding: 0;
+	font-weight: 500;
+	background-color: #6363cf;
+	transition: background 0.1s ease-in-out;
+}
+.form-content form button:hover {
+	background-color: #5555c0;
+}
+.form-content .group {
+	display: flex;
+}
+.form-content .fgfield {
+	flex-grow: 1;
+}
+.form-content .field p {
+	font-size: 12px;
+}
+.form-content .field .error {
+	font-size: 12px;
+	color: #e72e2e;
+}
+.form-content select._error,
+.form-content input._error {
+	border-color: #e72e2e;
+}
+.form-content .meta {
+	align-items: center;
+	display: flex;
+	flex: 1;
+  justify-content: center;
+}
+.form-content .meta img {
+	margin-top: -11px;
+}
+.form-content select {
+	-webkit-appearance: none;
+  background-image: var(--sms-bomber-cheverone-image-url);
+  background-repeat: no-repeat;
+  background-position: right 11px center;
+}
+.form-content select:focus {
+	color: #6363cf;
+}
+.info-content {
+	padding: 8px 11px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.info-content footer {
+	font-size: 12px;
+	margin-top: auto;
+	text-align: center;
+	color: #f9f9f9;
+	font-family: monospace;
+}
+.info-content .content-view {
+	flex-direction: column;
+	display: inherit;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+}
+.appinfo {
+	color: #ffffff;
+	margin-top: 11px;
+	text-align: center;
+}
+.info-content code {
+	color: #ebeb0e;
+	font-size: 13px;
+}
+.appinfo h2 {
+	font-weight: 600;
+	font-size: 23px;
+}
+.appinfo a {
+	font-size: 13px;
+	color: #ebe8e8;
+}
+.appinfo a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+/* style terminal */
+.terminal {
+	font-weight: 600;
+	color: #e6e3e3;
+	user-select: none;
+	font-size: 13px;
+	font-family: monospace;
+	background-color: #0c0c0c;
+}
+.terminal header {
+	color: #e6e3e3;
+	padding: 3px 5px;
+	display: flex;
+	justify-content: space-between;
+}
+.terminal header .aqua {
+	color: #61d6d6;
+}
+.bomber-details, .bomber-request {
+	padding: 11px 5px;
+}
+table td:first-child {
+	width: 173px;
+}
+table .lg {
+	color: #16c60c;
+}
+.scrollable-view .lb {
+	color: #3b78ff;
+}
+.bomber-request {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	overflow: hidden;
+}
+.bomber-request .scrollable-view {
+	margin-top: 11px;
+	flex: 1;
+	scrollbar-width: 0px;
+	overflow-x: hidden;
+}
+.scrollable-view::-webkit-scrollbar {
+	width: 0px;
+}
+.scrollable-view table tr td:last-child {
+	padding-left: 22px;
+}
+.scrollable-view .error, table .error {
+	color: #f71616;
+}

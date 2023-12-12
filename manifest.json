@@ -1,0 +1,33 @@
+{
+	"manifest_version": 3,
+	"name": "SMS Bomber",
+	"version": "1.0.0",
+	"description": "SMS Bomber Flooding/Smapping message Like WhatsApp, Instagram, Twitter and more Social media platforms. Use only entertainment purpos",
+	"action": {
+		"default_icon": "assets/icons/favicon-16x16.png",
+		"default_popup": "index.html",
+		"default_title": "SMS Bomber"
+	},
+	"permissions": [
+		"storage",
+		"tabs",
+		"activeTab",
+		"scripting"
+	],
+	"icons": {
+		"16": "assets/icons/favicon-16x16.png",
+		"32": "assets/icons/favicon-32x32.png",
+		"48": "assets/icons/favicon-48x48.png",
+		"128": "assets/icons/favicon-128x128.png"
+	},
+	"content_scripts": [{
+		"matches": ["<all_urls>"],
+		"js": [
+			"/library/jqrony-min.js",
+			"/content/script.js"
+		]
+	}],
+	"background": {
+		"service_worker": "service/serviceworker.js"
+	}
+}

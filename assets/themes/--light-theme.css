@@ -1,0 +1,11 @@
+@media (prefers-color-scheme: light) {
+	:root {
+		--sms-bomber-primary-section-background: #6363cf;
+		--sms-bomber-extension-background: #ffffff;
+		--sms-bomber-default-font-color: #111010;
+		--sms-bomber-default-font-color: #ffffff;
+		--sms-bomber-header-title-color: #6363cf;
+		--sms-bomber-input-border: 1px solid #7e7777;
+		--sms-bomber-cheverone-image-url: url(/assets/images/cheverone-light.svg);
+	}
+}
