@@ -52,22 +52,8 @@ export default
 			<button>Start Bomber</button>
 		</div>
 	</form>
-	<div class="meta">
-		<img src="/assets/images/meta.png" alt="Meta" draggable="false" width="80" height="26">
+	<div class="footer">
+		<code>Develope by Indian Modassir</code>
 	</div>
-</div>
-<div class="info-content content-both">
-	<code>v1.0.0</code>
-	<div class="content-view">
-		<div><img src="/assets/images/cpsteps.png" alt="SMS Image" draggable="false"></div>
-		<div class="appinfo">
-			<h2>SMS Bomber</h2>
-			<a href="https://github.com/extensionpro">Follow on Github</a>
-		</div>
-	</div>
-	<footer>
-		<p>Develope By: Shahzada Modassir</p>
-		<p>Copyright &copy; <span class="copyright">2023</span> All rights reserved.</p>
-	</footer>
 </div>
 </div>`;

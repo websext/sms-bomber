@@ -1,10 +1,40 @@
-@import url(/assets/themes/--light-theme.css);
-@import url(/assets/static/css-setup.css);
-@import url(/assets/themes/--dark-theme.css);
-
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+	display: none;
+}
+svg, img {
+	display: block;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+input, button, select {
+	border: none;
+	outline: none;
+}
+button:not(:disabled) {
+	cursor: pointer;
+}
+body {
+	color: #111010;
+	unicode-bidi: embed;
+	overflow: hidden;
+	direction: ltr;
+	-webkit-font-smoothing: antialiased;
+	font-family: Segoe WPC, Segoe UI, sans-serif;
+	background-color: #ffffff;
+}
 #content {
 	height: 400px;
-	width: 555px;
+	width: 277.5px;
 }
 .layout-wrapper {
 	height: 100%;
@@ -16,16 +46,12 @@
 .content-both {
 	position: relative;
 	flex: 1;
-	max-width: 50%;
 	overflow: hidden;
 }
 .form-content {
 	flex-direction: column;
 	display: flex;
-	background-color: var(--sms-bomber-extension-background);
-}
-.info-content {
-	background-color: var(--sms-bomber-primary-section-background);
+	background-color: #ffffff;
 }
 .form-content .headwrap {
 	justify-content: flex-end;
@@ -44,7 +70,7 @@
 .form-content .headwrap h3 {
 	font-size: 17px;
 	font-weight: 600;
-	color: var(--sms-bomber-header-title-color);
+	color: #6363cf;
 }
 .form-content form {
 	padding: 11px;
@@ -61,7 +87,7 @@
 	width: 100%;
 	color: inherit;
 	font-family: inherit;
-	border-bottom: var(--sms-bomber-input-border);
+	border-bottom: 1px solid #7e7777;
 	background-color: var(--sms-bomber-input-background);
 }
 .form-content form select:focus,
@@ -100,64 +126,14 @@
 .form-content input._error {
 	border-color: #e72e2e;
 }
-.form-content .meta {
-	align-items: center;
-	display: flex;
-	flex: 1;
-  justify-content: center;
-}
-.form-content .meta img {
-	margin-top: -11px;
-}
 .form-content select {
 	-webkit-appearance: none;
-  background-image: var(--sms-bomber-cheverone-image-url);
+  background-image: url(/assets/images/cheverone-light.svg);
   background-repeat: no-repeat;
   background-position: right 11px center;
 }
 .form-content select:focus {
 	color: #6363cf;
-}
-.info-content {
-	padding: 8px 11px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-.info-content footer {
-	font-size: 12px;
-	margin-top: auto;
-	text-align: center;
-	color: #f9f9f9;
-	font-family: monospace;
-}
-.info-content .content-view {
-	flex-direction: column;
-	display: inherit;
-	flex: 1;
-	align-items: center;
-	justify-content: center;
-}
-.appinfo {
-	color: #ffffff;
-	margin-top: 11px;
-	text-align: center;
-}
-.info-content code {
-	color: #ebeb0e;
-	font-size: 13px;
-}
-.appinfo h2 {
-	font-weight: 600;
-	font-size: 23px;
-}
-.appinfo a {
-	font-size: 13px;
-	color: #ebe8e8;
-}
-.appinfo a:hover {
-	color: #ffffff;
-	text-decoration: underline;
 }
 /* style terminal */
 .terminal {
@@ -209,4 +185,8 @@ table .lg {
 }
 .scrollable-view .error, table .error {
 	color: #f71616;
+}
+.footer {
+	text-align: center;
+	font-size: 13px;
 }
